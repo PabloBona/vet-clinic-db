@@ -3,7 +3,7 @@
 CREATE DATABASE vet_clinic;
 -- \c vet_clinic To connect to the database.
 CREATE TABLE animals (
-    id INT PRIMARY KEY NOT NULL,
+    id SERIAL PRIMARY KEY,
     name varchar(100),
     date_of_birth DATE,
     escape_attempts INT,
