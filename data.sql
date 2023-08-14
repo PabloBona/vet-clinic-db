@@ -7,5 +7,17 @@ VALUES
 ('Pikachu', '2021-07-01', 1, false, 15.04),
 ('Devimon', '2017-05-12', 5, true, 11);
 
+-- SELECT * FROM animals; To check if data was inserted correctly.
 
+
+-- query and update animals table
+INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
+VALUES 
+('Charmander', '2020-02-08', 0, false, -11),
+('Plantmon', '2020-02-08', 2, true, -5.7),
+('Squirtle', '2020-02-08', 0, false, -12.13),
+('Angemon', '2005-07-12',1, true, -45),
+('Boarmon', '2005-07-06', 7, true, 20.4),
+('Blossom', '1998-10-13', 3, true, 17),
+('Ditto', '2022-05-14', 5, true, 22);
 -- SELECT * FROM animals; To check if data was inserted correctly.
