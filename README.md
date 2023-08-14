@@ -1,7 +1,5 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+<h1>Vet Clinic Database Project</h1>
+This project involves creating a database for a vet clinic to manage animals' information. You'll be using SQL to create tables, insert data, and perform various queries. The goal is to create a well-structured database and gain experience in managing data within a relational database system.
 
 
 ## Getting Started
@@ -14,107 +12,50 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet Clinic Database Project] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+This project involves creating a relational database for a vet clinic. The database will store information about animals, such as their names, birthdates, escape attempts, neutering status, weight, and species. You will be using SQL to define the structure of the database, insert sample data, and perform various queries to extract useful information.
 
-**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
+The project is built using SQL for database management.
+Getting Started
+Follow these steps to understand and work on the project:
+
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+The project is built using the following technologies:
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+- **Server**: [Express.js](https://expressjs.com/) - A fast and minimalist web framework for Node.js.
+- **Database**: [PostgreSQL](https://www.postgresql.org/) - A powerful, open-source relational database system.
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
+Feel free to modify or expand the tech stack as needed for your project's requirements.
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
+- **[SQL Database Management: Create, structure, and manage a relational database using SQL commands.]**
+- **[Data Manipulation: Insert, update, and delete data within the database using SQL statements.]**
+- **[Querying Data: Perform various types of SQL queries to extract meaningful information from the database.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,103 +63,56 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+### 🛠 Setup <a name="setup"></a>
 
-To get a local copy up and running, follow these steps.
+1. Clone this repository to your local machine:
 
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
+```bash
+git clone https://github.com/PabloBona/vet-clinic-db
 ```
- -->
 
-### Setup
+2. Set up a PostgreSQL database named `vet_clinic`.
 
-Clone this repository to your desired folder:
+### Database Structure
 
-<!--
-Example commands:
+The `schema.sql` file includes SQL commands to create the `animals` table with the following columns:
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+- `id`: A unique identifier for each animal.
+- `name`: The name of the animal.
+- `date_of_birth`: The birthdate of the animal.
+- `escape_attempts`: The number of escape attempts made by the animal.
+- `neutered`: A boolean indicating if the animal is neutered.
+- `weight_kg`: The weight of the animal in kilograms.
+- `species`: The species of the animal.
+
+You can execute the `schema.sql` file to create the table structure by running:
+
+```bash
+psql -d vet_clinic -a -f schema.sql
 ```
---->
 
-### Install
+Make sure you have PostgreSQL installed and configured on your machine before running the command.
 
-Install this project with:
+Feel free to modify the column descriptions and structure according to your project's needs.
 
-<!--
-Example command:
+Please note that the database schema and structure provided are based on your project's requirements and can be adjusted as necessary.
 
-```sh
-  cd my-project
-  gem install
-```
---->
+## 🛠 Usage <a name="usage"></a>
+The data.sql file contains SQL commands to insert sample data into the animals table. You can use these commands to populate the table with information about different animals.
 
-### Usage
+The queries.sql file contains SQL queries to answer various questions about the data stored in the animals table. These queries cover topics like filtering animals based on conditions, retrieving specific information, and calculating aggregate values.
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+After running the queries, you can take screenshots of the results to showcase your work.
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Pablo Bonasera**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Pablobona](https://github.com/PabloBona)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,11 +120,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ x ] **[User Authentication: Implement user authentication and authorization to allow different users to access and manage animal records with appropriate permissions.]**
+- [ x ] **[Appointment Scheduling: Create a feature that enables users to schedule appointments for animals, such as check-ups, vaccinations, and surgeries.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +140,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+ 
 
-If you like this project...
+If you like this project or if it helped you, please give a ⭐️. I'd really appreciate it!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,9 +150,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+ 
 
-I would like to thank...
+I would like to thank Microverse and all my peers and colleagues at Microverse for giving me the opportunity to work on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -268,15 +160,17 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[How do I set up the PostgreSQL database for this project?]**
 
-- **[Question_1]**
+  - Clone the repository to your local machine
+  - Create a new PostgreSQL database named "vet_clinic".
+  - Execute the SQL commands in the "schema.sql" file to create the necessary table structure.
+  - Populate the database with sample data by executing the SQL commands in the "data.sql" file.
 
-  - [Answer_1]
+- **[How can I run the queries provided in the "queries.sql" file?]**
 
-- **[Question_2]**
+  - To run the queries provided in the "queries.sql" file, you can use a PostgreSQL client or interface, such as psql command-line tool or a graphical tool like pgAdmin. Connect to your "vet_clinic" database and execute the queries in the file to retrieve the desired information from the database.
 
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -284,8 +178,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
