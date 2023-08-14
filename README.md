@@ -12,31 +12,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -133,7 +108,6 @@ After running the queries, you can take screenshots of the results to showcase y
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Pablo Bonasera**
 
@@ -146,7 +120,6 @@ After running the queries, you can take screenshots of the results to showcase y
 
 ## 🔭 Future Features <a name="future-features"></a>
 
- 
 
 - [ x ] **[User Authentication: Implement user authentication and authorization to allow different users to access and manage animal records with appropriate permissions.]**
 - [ x ] **[Appointment Scheduling: Create a feature that enables users to schedule appointments for animals, such as check-ups, vaccinations, and surgeries.]**
