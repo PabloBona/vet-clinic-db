@@ -59,3 +59,15 @@ CREATE TABLE visits (
     visit_date DATE,
     PRIMARY KEY (animal_id, vet_id)
 );
+
+-- 5
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Add indexes to your visits table animal_id
+CREATE INDEX idx_animal_id ON visits (animal_id);
+-- Add indexes to your visits table vet_id
+CREATE INDEX vet_id_asc ON visits(vet_id ASC);
+-- Add indexes to your owners table
+CREATE INDEX idx_email ON owners (email);
+
