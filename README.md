@@ -113,6 +113,11 @@ After running the queries, you can take screenshots of the results to showcase y
 
 - GitHub: [@Pablobona](https://github.com/PabloBona)
 
+👤 **lRebornsl**
+
+- GitHub: [@lRebornsl](https://github.com/lRebornsl)
+- Twitter: [@RebornsDev](https://twitter.com/RebornsDev)
+- LinkedIn: [Anthony Vásquez](https://www.linkedin.com/in/avvm98/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
