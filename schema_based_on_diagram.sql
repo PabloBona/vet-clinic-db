@@ -3,7 +3,7 @@
 CREATE TABLE medical_histories (
     id serial PRIMARY KEY,
     admitted_at DATE,
-    patient_id int REFERENCES medical_histories(id),
+    patient_id int REFERENCES patients(id),
     status VARCHAR
 );
 
