@@ -2,16 +2,6 @@
 This project involves creating a database for a vet clinic to manage animals' information. You'll be using SQL to create tables, insert data, and perform various queries. The goal is to create a well-structured database and gain experience in managing data within a relational database system.
 
 
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
-<a name="readme-top"></a>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -37,7 +27,16 @@ This project involves creating a relational database for a vet clinic. The datab
 
 ## 🛠 Built With <a name="built-with"></a>
 The project is built using SQL for database management.
-Getting Started
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+This repository includes files with plain SQL that can be used to recreate a database:
+
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+
+<a name="readme-top"></a>
 Follow these steps to understand and work on the project:
 
 
@@ -59,9 +58,7 @@ Feel free to modify or expand the tech stack as needed for your project's requir
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
 
 ### 🛠 Setup <a name="setup"></a>
 
